@@ -97,7 +97,6 @@ const fetchNotionPage = async (PAGE_ID: string): Promise<NotionPage> => {
   const result = await fetch(
     `https://api.notion.com/v1/blocks/${PAGE_ID}/children`,
     {
-      cache: "no-store",
       headers: {
         Authorization: `Bearer ${process.env.NOTION_API_KEY}`,
         "Content-Type": "application/json",
