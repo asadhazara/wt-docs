@@ -229,20 +229,13 @@ const NotionPage = ({ page }: { page: { results: Block[] } }) => {
   );
 };
 
-type SearchParams = Promise<{ [key: string]: string | string[] | undefined }>;
-
-export default async function Page(props: { searchParams: SearchParams }) {
-  const searchParams = await props.searchParams;
-  const token = searchParams.token;
-
-  if (token !== process.env.ASSISTANT_TOKEN || !process.env.NOTION_API_KEY)
-    return notFound();
+export default async function Page() {
+  if (!process.env.NOTION_API_KEY) return notFound();
 
   const pages = await getNotionPages();
 
   return (
     <>
-      test
       {pages.map((page) => (
         <NotionPage key={page.request_id} page={page} />
       ))}
