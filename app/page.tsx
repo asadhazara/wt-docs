@@ -242,6 +242,7 @@ export default async function Page(props: { searchParams: SearchParams }) {
 
   return (
     <>
+      test
       {pages.map((page) => (
         <NotionPage key={page.request_id} page={page} />
       ))}
