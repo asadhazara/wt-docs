@@ -1,6 +1,6 @@
-import cn from "classnames";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+import cn from "classnames";
 
 export const metadata: Metadata = {
   title: "AI Docs — wetracked.io",
