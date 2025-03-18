@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { NOTION_PAGE_IDS } from "./assistant/[notionPageId]/page";
 import Link from "next/link";
+import { NOTION_PAGE_IDS } from "./constants";
 
 export default async function Page() {
   if (!process.env.NOTION_API_KEY) return notFound();
