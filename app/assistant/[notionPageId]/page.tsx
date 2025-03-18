@@ -226,7 +226,6 @@ export function generateStaticParams() {
     notionPageId,
   }));
 }
-
 export default async function Page({
   params,
 }: {
