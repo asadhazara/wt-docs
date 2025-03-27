@@ -13,4 +13,5 @@ export const NOTION_PAGE_IDS = [
   "4d78b88568c34c20b9f0eb8d1dd2c488", // Klaviyo
   "1af47097eaf080e28c27e4d313a1f7d1", // Reddit Ads
   "872c79a3d6e54273aecef221755f1d07", // Advertorials
+  "1c347097eaf080ac89bfdbc44f41c7d6", // Flows
 ];
